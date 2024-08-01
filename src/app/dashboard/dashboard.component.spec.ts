@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard.component';
+import { HeroSearchComponent } from '../hero-search/hero-search.component'; 
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -8,7 +9,13 @@ describe('DashboardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DashboardComponent]
+      declarations: [
+        DashboardComponent,
+        HeroSearchComponent 
+      ],
+      imports: [
+        HttpClientModule ,
+      ],
     })
     .compileComponents();
     
