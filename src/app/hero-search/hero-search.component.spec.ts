@@ -24,4 +24,11 @@ describe('HeroSearchComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('teste-do-lucas', () => {
+    it('should print "Hello World"', () => {
+      const message = "Hello World";
+      expect(message).toBe("Hello World");
+    });
+  });
 });
