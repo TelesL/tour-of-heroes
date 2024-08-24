@@ -25,10 +25,32 @@ describe('HeroSearchComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  describe('teste-do-lucas', () => {
-    it('should print "Hello World"', () => {
-      const message = "Hello World";
-      expect(message).toBe("Hello World");
+  describe('tour-of-heroes-test', () => {
+
+    //Teste pra verificar se "tour-of-heroes-test" é igual a mesma váriavel.
+    it('deve imprimir "tour-of-heroes-test"', () =>{
+      const message = "tour-of-heroes-test";
+      expect(message).toBe("tour-of-heroes-test");
     });
+
+    //Teste para verificar se a váriavel é nula.
+    it('deve retornar "null"', () => {
+      const value = null;
+      expect(value).toBeNull();
+    });
+
+    //Teste para verificar se a lista contém um arrays especifico.
+    it('deve conter "hero"', () => {
+      const heroes = ['hero', 'villain'];
+      expect(heroes).toContain('hero');
+    });
+
+    //Teste para verificar se a variável booleana é verdadeira.
+    it('deve ser "true"', () => {
+      const isHero = true;
+      expect(isHero).toBeTrue();
+    });
+
   });
+  
 });
